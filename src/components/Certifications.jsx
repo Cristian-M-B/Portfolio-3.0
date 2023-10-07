@@ -19,11 +19,11 @@ export default function Certifications() {
             <h3 className='font-bold text-large underline text-center mb-10'>
                 {languages[locale].titles.certifications}
             </h3>
-            <div data-aos='zoom-out' className='flex justify-center'>
+            <div data-aos='zoom-in' className='flex justify-center'>
                 <Carousel
                     indicators={false}
                     navButtonsAlwaysVisible={true}
-                    className='w-[308px] h-[208px] sm:w-[608px] sm:h-[408px]
+                    className='w-[348px] h-[238px] sm:w-[608px] sm:h-[408px]
                     border-b-4 border-r-4 border-solid rounded-lg border-black dark:border-white'
                 >
                     {certifications?.map(certification => (
@@ -31,7 +31,7 @@ export default function Certifications() {
                             key={certification.name}
                             alt={certification.name}
                             src={certification.image}
-                            className='w-[300px] h-[200px] sm:w-[600px] sm:h-[400px]'
+                            className='w-[340px] h-[230px] sm:w-[600px] sm:h-[400px]'
                         />
                     ))}
                 </Carousel>
