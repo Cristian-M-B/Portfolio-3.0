@@ -30,7 +30,7 @@ export default function NavBar() {
                             smooth={true}
                             offset={-60}
                             duration={1000}
-                            className='cursor-pointer'
+                            className='cursor-pointer hover:font-bold'
                         >
                             {languages[locale].nav[title]}
                         </Link>
@@ -51,7 +51,7 @@ export default function NavBar() {
                             offset={-60}
                             duration={1000}
                             onClick={() => setIsMenuOpen(false)}
-                            className='cursor-pointer'
+                            className='cursor-pointer hover:font-bold'
                         >
                             {languages[locale].nav[title]}
                         </Link>
