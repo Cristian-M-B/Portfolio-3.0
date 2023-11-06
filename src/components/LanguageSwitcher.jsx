@@ -50,6 +50,7 @@ export default function LanguageSwitcher() {
                     as={Link}
                     href='/'
                     locale={option.locale}
+                    onChange={() => router.refresh()}
                 >
                     <div className='flex items-center gap-1'>
                         {option.flag}
